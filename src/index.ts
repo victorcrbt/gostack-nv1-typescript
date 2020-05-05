@@ -1,10 +1,10 @@
 import express from 'express';
 
-import { helloWorld } from './routes';
+import { storeUser } from './routes';
 
 const app = express();
 
-app.get('/', helloWorld);
+app.post('/users', storeUser);
 
 const PORT = 3333;
 
